@@ -1,12 +1,11 @@
 import React from 'react';
-import { Space, Tabs, BackTop, Typography, Row, Col, PageHeader } from 'antd';
+import { Tabs, Typography, Row, Col, PageHeader } from 'antd';
 import './App.css';
 import PostCard from './components/postcard';
 import Modal from './components/modal';
 import api from './api/api';
 
 const { TabPane } = Tabs;
-const { Title } = Typography;
 
 function App() {
 	const [posts, setPosts] = React.useState();
@@ -78,7 +77,6 @@ function App() {
 				onClose={handleOnClose}
 				description={description}
 				content={content}
-				onClose={handleOnClose}
 			/>
 		   	<div className="App">
 				<div className="background"></div>
