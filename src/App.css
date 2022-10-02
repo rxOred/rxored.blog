@@ -1,38 +1,122 @@
+@import '~antd/dist/antd.css';
+/*
+p {
+	text-align: justify;
+	text-justify: inter-word;
+	font-family: 'JetBrains Mono';
+	font-weight: normal;
+	font-size: 14px;
+	color: white;
+}
+*/
 .App {
   text-align: center;
+  font-family: 'JetBrains Mono';
+  color: rgba(555, 555, 555, 1);
+  font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.background {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-image: url('../public/wall.jpg');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.heading {
+	color: white;
+	padding-top: 2%;
+	padding-left: 4%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.body {
+	color: white;
+	padding-top: 2%;
+	padding-bottom: 4%;
+	padding-left: 4%;
+	padding-right: 4%;
 }
 
-.App-link {
-  color: #61dafb;
+.post-content {
+	height: 650px;
+	width: 100%;
+	overflow: auto;
+	text-align: justify;
+	padding-left: 0px;
+	padding-right: 20px;
+	padding-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content-mobile {
+	width: 100%;	
+	color: white;
+	padding-left: 2%;
+	background-color: rgba(000, 000, 000, 0.54);
+	padding: 2%;
+	align-content: left;
+}
+
+.content-desktop  {
+	width: 80%;	
+	color: white;
+	padding-left: 2%;
+	background-color: rgba(000, 000, 000, 0.54);
+	padding: 2%;
+	align-content: left;
+}
+
+.content-paragraph {
+	text-align: justify;
+}
+
+.space {
+	padding: 20%;
+	border-bottom-width: 10;
+	border-color: black;
+	border-style: solid;
+}
+
+.ant-tabs-tab {
+  color: white !important;
+}
+
+.ant-tabs-nav .ant-tabs-tab-active {
+  color: purple !important;
+}
+
+.backtop {
+	height: 40;
+	width: 40;
+	lineHeight: 1;
+	borderRadius: 4;
+	backgroundColor: white;
+	color: black;
+	textAlign: 'center';
+	fontSize: 14;
+}
+
+/* modal */
+.ant-modal-content{
+   background-color: rgba(000, 000, 000);
+   color: white;
+   border-radius: 1%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey; 
+  border-radius: 10px;
 }

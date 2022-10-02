@@ -1,0 +1,93 @@
+.modal-background {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-size: cover;
+	background-image: url('../../public/wall.jpg');
+	z-index: 1;
+}
+
+.modal {
+	position: relative;
+	margin-top: 5%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 5%;;
+	padding-top: 2%;
+	padding-bottom: 4%;
+	height: 80%;
+	width: 80%;
+	background-color: rgba(3, 3, 3, 0.54); 
+	z-index: 2;
+}
+
+.cancel-button {
+	position: relative;
+	float: right;
+	background-color: rgba(0, 0, 0, 1);
+	color: white;
+	display: flex;
+}
+
+.modal-title {
+	color: white;
+	font-weight: bolder;
+	font-size: 15px;
+}
+
+.modal-header {
+	font-family: 'JetBrains Mono';
+	width: 100%;
+	height: 6%;
+	color:white;
+	padding-left: 4%;
+	padding-right: 4%;
+	padding-bottom: 3%;
+}
+
+.modal-body {
+	overflow: auto;
+	text-align: justify;
+	text-justify: inter-word;
+	font-family: 'JetBrains Mono';
+	height: 100%;
+	width: 100%;
+	color: white;
+	padding-right: 4%;
+	padding-left: 4%;
+}
+
+.modal-description {
+	color: white;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 14px;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.modal-content-text {
+	text-align: justify;
+	text-justify: inter-word;
+	font-family: 'JetBrains Mono';
+	font-weight: normal;
+	font-size: 19px;
+	color: white;
+}
+
+.modal-content-quote {
+	padding: 1%;
+	background-color: rgba(6, 6, 6, 0.64);
+	widows: 100%;
+	text-align: center;
+	align-content: center;
+	align-items: center;
+	align-self: center;
+	font-family: 'JetBrains Mono';
+	font-weight: normal;
+	font-style: italic;
+	font-size: 14px;
+	color: white;
+
+}
+

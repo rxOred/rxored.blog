@@ -1,0 +1,29 @@
+.flexible-card .ant-card-body {
+    flex-grow: 1
+}
+
+.postcard-mobile {
+	background-color: rgba(000, 000, 000, 0.4);
+	width: 460px;
+	height: 220px;
+}
+
+.postcard-desktop {
+	background-color: rgba(000, 000, 000, 0.4);
+	width: 635px;
+	height: 220px;
+}
+
+.postcard-title {
+	color: white;
+	font-size: 28;
+	font-weight: bolder;
+}
+
+.postcard-description {
+	color: white;
+	font-weight: normal;
+	text-align: justify;
+}
+
+
