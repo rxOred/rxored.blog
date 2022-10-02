@@ -18,7 +18,6 @@ const PostCard = (props) => {
 	}
 
 	React.useEffect(() => {
-		console.log(contentShow);
 		window.addEventListener('resize', handleWindowSizeChange);
 		return () => {
 			window.removeEventListener('resize', handleWindowSizeChange);
