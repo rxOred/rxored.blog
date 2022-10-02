@@ -1,5 +1,5 @@
 import React from 'react';
-import { Space, Typography, Button } from 'antd';
+import { Typography } from 'antd';
 import { CloseOutlined } from '@ant-design/icons'; 
 import './modal.css';
 

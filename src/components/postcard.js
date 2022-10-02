@@ -1,17 +1,12 @@
 import React from 'react';
 import { Card, Typography } from 'antd';
 import './postcard.css';
-import api from '../api/api';
-import Modal from './modal.js';
 
-const { Meta } = Card;
-const { Text, Title } = Typography;
+const { Text} = Typography;
 
 const PostCard = (props) => {
 	const [width, setWidth] = React.useState(window.innerWidth);
 	const [postcardStyle, setPostcardStyle] = React.useState('postcard-desktop');
-	const [content, setContent] = React.useState();
-	const [contentShow, setContentShow] = React.useState(false);
 	
 	const handleWindowSizeChange = () => {
 		setWidth(window.innerWidth);
