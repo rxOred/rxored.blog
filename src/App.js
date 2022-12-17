@@ -140,7 +140,7 @@ function App() {
 									technical blog <a href='https://rxored.github.io/'>rxored.github.io</a>
 									<br/>
 									<br/>
-									email <a href="">rxored@gmail.com</a>
+									email rxored@gmail.com</a>
 									<br/>
 									<br/>
 									github <a href='https://github.com/rxOred/'>rxOred</a>
