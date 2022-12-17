@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tabs, Typography, Row, Col, PageHeader } from 'antd';
+import { Tabs, Row, Col, PageHeader } from 'antd';
 import './App.css';
 import PostCard from './components/postcard';
 import Modal from './components/modal';
@@ -12,7 +12,6 @@ function App() {
 	const [posts, setPosts] = React.useState();
 	const [width, setWidth] = React.useState(window.innerWidth);
 	const [tabPosition, setTabPosition] = React.useState('');
-	const [contentStyle, setContentStyle] = React.useState('content-desktop');
 	
 	const [isLoaded, setLoaded] = React.useState(false);
 
@@ -141,7 +140,7 @@ function App() {
 									technical blog <a href='https://rxored.github.io/'>rxored.github.io</a>
 									<br/>
 									<br/>
-									email <a href="#">rxored@gmail.com</a>
+									email <a href="">rxored@gmail.com</a>
 									<br/>
 									<br/>
 									github <a href='https://github.com/rxOred/'>rxOred</a>
