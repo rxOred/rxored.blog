@@ -57,8 +57,7 @@ function App() {
 	});
 
 	React.useEffect(() => {
-		setWidth(window.innerWidth);
-		if (width <= 768) {
+		if (window.innerWidth <= 768) {
 			setTabPosition('top');
 		} else {
 			setTabPosition('left');
