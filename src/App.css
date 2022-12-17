@@ -32,6 +32,10 @@ p {
 	padding-left: 4%;
 }
 
+.heading-font {
+	font-size: 15px;
+}
+
 .body {
 	color: white;
 	padding-top: 2%;
@@ -68,9 +72,6 @@ p {
 	border-bottom-width: 10;
 	border-color: black;
 	border-style: solid;
-}
-
-.ant-tabs-tab {
 }
 
 .ant-tabs-tab {

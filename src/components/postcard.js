@@ -5,30 +5,11 @@ import './postcard.css';
 const { Text} = Typography;
 
 const PostCard = (props) => {
-	const [width, setWidth] = React.useState(window.innerWidth);
-	const [postcardStyle, setPostcardStyle] = React.useState('postcard-desktop');
-	
-	const handleWindowSizeChange = () => {
-		setWidth(window.innerWidth);
-		if (width <= 768) {
-			setPostcardStyle('postcard-mobile');
-		} else {
-			setPostcardStyle('postcard-desktop');
-		}
-	}
-
-	React.useEffect(() => {
-		window.addEventListener('resize', handleWindowSizeChange);
-		return () => {
-			window.removeEventListener('resize', handleWindowSizeChange);
-		}
-	});
-
 	return (
 		<>
 			<div onClick={() => {props.onClick(props.id, props.title, props.description)}}>
 				<Card
-					className={postcardStyle}
+					className={"postcard"}
 					bordered={false}
 					hoverable>
 					<p>

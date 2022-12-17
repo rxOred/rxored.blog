@@ -87,7 +87,6 @@ function App() {
 				<div className="heading">
 					<PageHeader
 						style={{ padding: 10 }}
-						className="site-page-header" 
 						title={
 							<h3 style={{color: "white"}}>
 								<span>"The end justifies the means"</span>
