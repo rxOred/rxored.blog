@@ -9,6 +9,7 @@ p {
 	color: white;
 }
 */
+
 .App {
   text-align: center;
   font-family: 'JetBrains Mono';
@@ -49,16 +50,7 @@ p {
 	padding-bottom: 20px;
 }
 
-.content-mobile {
-	width: 100%;	
-	color: white;
-	padding-left: 2%;
-	background-color: rgba(000, 000, 000, 0.54);
-	padding: 2%;
-	align-content: left;
-}
-
-.content-desktop  {
+.content  {
 	width: 80%;	
 	color: white;
 	padding-left: 2%;
@@ -79,11 +71,14 @@ p {
 }
 
 .ant-tabs-tab {
-  color: white !important;
+}
+
+.ant-tabs-tab {
+	color: white !important;
 }
 
 .ant-tabs-nav .ant-tabs-tab-active {
-  color: purple !important;
+	color: purple !important;
 }
 
 .backtop {
@@ -119,4 +114,19 @@ p {
 ::-webkit-scrollbar-thumb {
   background: grey; 
   border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+	.content {
+		width: 100%;	
+		color: white;
+		padding-left: 2%;
+		background-color: rgba(000, 000, 000, 0.54);
+		padding: 2%;
+		align-content: left;
+	}
+
+	.ant-tabs-tab {
+		position: 'top';
+	}
 }

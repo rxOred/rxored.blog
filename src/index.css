@@ -7,6 +7,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+	font-family: "JetBrains Mono";
+	src: local("Jetbrains Mono"),
+		 url("./fonts/JetBrainsMono/JetBrainsMono-Medium.ttf") format("truetype");
+	font-weight: bold;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

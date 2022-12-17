@@ -4,13 +4,14 @@ import './App.css';
 import PostCard from './components/postcard';
 import Modal from './components/modal';
 import api from './api/api';
+import './style.less';
 
 const { TabPane } = Tabs;
 
 function App() {
 	const [posts, setPosts] = React.useState();
 	const [width, setWidth] = React.useState(window.innerWidth);
-	const [tabPosition, setTabPosition] = React.useState('left');
+	const [tabPosition, setTabPosition] = React.useState('');
 	const [contentStyle, setContentStyle] = React.useState('content-desktop');
 	
 	const [isLoaded, setLoaded] = React.useState(false);
@@ -25,10 +26,10 @@ function App() {
 		setWidth(window.innerWidth);
 		if (width <= 768) {
 			setTabPosition('top');
-			setContentStyle('content-mobile');
+			//setContentStyle('content-mobile');
 		} else {
 			setTabPosition('left');
-			setContentStyle('content-desktop');
+			//setContentStyle('content-desktop');
 		}
 	}
 
@@ -37,7 +38,6 @@ function App() {
 	}
 
 	const handlePostcardClick = (id, title, description) => {
-		console.log('dadadada');
 		setTitle(title);
 		setDescription(description);
 		api.get('/posts/' + id).then((response) => {
@@ -56,6 +56,15 @@ function App() {
 			window.removeEventListener('resize', handleWindowSizeChange);
 		}
 	});
+
+	React.useEffect(() => {
+		setWidth(window.innerWidth);
+		if (width <= 768) {
+			setTabPosition('top');
+		} else {
+			setTabPosition('left');
+		}
+	}, [])
 	
 	React.useEffect(() => {
 		api.get('/posts').then((response) => {
@@ -91,7 +100,7 @@ function App() {
 					/>
 				</div>
 				<div className="body">
-					<Tabs className="" tabPosition={tabPosition}>
+					<Tabs tabPosition={tabPosition}>
 						<TabPane  tab="posts" key="1" size="small">
 							<div className="post-content">
 								<Row gutter={[30, 50]} >
@@ -108,7 +117,7 @@ function App() {
 						</TabPane>
 
 						<TabPane tab="about" key="2">
-							<div className={contentStyle}>
+							<div className="content">
 								<p className="content-paragraph">
 									I go by rxOred. I do software programming to make a living and also do lots of reverse engineering as a hobby.
 									<br/>
@@ -127,7 +136,7 @@ function App() {
 						</TabPane>
 
 						<TabPane tab="contact" key="3">
-							<div className={contentStyle}>
+							<div className="content">
 								<p className="content-paragraph">
 									technical blog <a href='https://rxored.github.io/'>rxored.github.io</a>
 									<br/>
