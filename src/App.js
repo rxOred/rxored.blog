@@ -4,7 +4,6 @@ import './App.css';
 import PostCard from './components/postcard';
 import Modal from './components/modal';
 import api from './api/api';
-import './style.less';
 
 const { TabPane } = Tabs;
 
@@ -25,10 +24,8 @@ function App() {
 		setWidth(window.innerWidth);
 		if (width <= 768) {
 			setTabPosition('top');
-			//setContentStyle('content-mobile');
 		} else {
 			setTabPosition('left');
-			//setContentStyle('content-desktop');
 		}
 	}
 

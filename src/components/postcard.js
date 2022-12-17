@@ -24,7 +24,6 @@ const PostCard = (props) => {
 		}
 	});
 
-
 	return (
 		<>
 			<div onClick={() => {props.onClick(props.id, props.title, props.description)}}>
