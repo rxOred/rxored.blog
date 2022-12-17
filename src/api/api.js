@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-	baseURL: 'https://rxoredblog.herokuapp.com/'
+	baseURL: 'https://rxored-blog-backend.azurewebsites.net/'
 });
 
 export default api;
