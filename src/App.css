@@ -32,8 +32,8 @@ p {
 	padding-left: 4%;
 }
 
-.heading-font {
-	font-size: 15px;
+.page-header {
+
 }
 
 .body {
@@ -82,17 +82,6 @@ p {
 	color: purple !important;
 }
 
-.backtop {
-	height: 40;
-	width: 40;
-	lineHeight: 1;
-	borderRadius: 4;
-	backgroundColor: white;
-	color: black;
-	textAlign: 'center';
-	fontSize: 14;
-}
-
 /* modal */
 .ant-modal-content{
    background-color: rgba(000, 000, 000);
@@ -129,5 +118,9 @@ p {
 
 	.ant-tabs-tab {
 		position: 'top';
+	}
+
+	.page-header {
+		font-size: 20px;
 	}
 }

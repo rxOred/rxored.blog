@@ -85,10 +85,10 @@ function App() {
 		   	<div className="App">
 				<div className="background"></div>
 				<div className="heading">
-					<PageHeader
+					<PageHeader	
 						style={{ padding: 10 }}
 						title={
-							<h3 style={{color: "white"}}>
+							<h3 className='page-header' style={{color: "white"}}>
 								<span>"The end justifies the means"</span>
 							</h3>}
 					/>

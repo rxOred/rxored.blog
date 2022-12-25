@@ -24,23 +24,4 @@ const PostCard = (props) => {
 	)
 } 
 
-
-/*
-<div >
-				<Modal 	
-					title={props.title}
-					centered
-					open={contentShow}
-					onCancel={() => {setContentShow(false)}}
-					width={"70p%"}
-					height={"80%"}
-				>
-					<Text bold>{props.description}</Text>
-					<br/>
-					<Text>{content}</Text>
-				</Modal>
-			</div>
-
-
-  */
 export default PostCard;
