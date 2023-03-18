@@ -113,14 +113,13 @@ function App() {
 						<TabPane tab="about" key="2">
 							<div className="content">
 								<p className="content-paragraph">
-									I go by rxOred. I do software programming to make a living and also do lots of reverse engineering as a hobby.
+                                    I go by rxOred, and I tend to think of myself as an unreliable narrator. 
 									<br/>
 									<br/>
-									But for the most part, who / what am I is irrelavent. This blog is just one of simple efforts to make my reading journals persistent. I dont really care about who reads this.  
-									I am also hoping to upload my views and ideas on various topics, whether it maybe a social, political or simply, personal. 
+									For the most part, who / what am I is irrelavent. This blog purely acts as a persistent and publically accessible storage for my writings and journals that I think are most important.
 									<br/>
 									<br/>
-									I would like to point out that I, as a programmer, has no academic background on the subjects that I write here. Please be kind to send me an email if you find anything where I am wrong. And if you find anything I write here offensive, I would like you to know that, I dont care.
+									I would like to point out that I, as a software developer by profession, has no formal academic background on the subjects that I write here. Please be kind to send me an email if you find anything where I am wrong. And if you find anything I write here to be offensive, I would like you to know that, I dont care.
 									<br/>
 									<br/>
 									<b>#Spread Anarchy</b>
@@ -132,16 +131,16 @@ function App() {
 						<TabPane tab="contact" key="3">
 							<div className="content">
 								<p className="content-paragraph">
-									technical blog <a href='https://rxored.github.io/'>rxored.github.io</a>
+									Technical blog <a href='https://rxored.github.io/'>rxored.github.io</a>
 									<br/>
 									<br/>
-									email rxored@gmail.com
+									Email rxored@gmail.com
 									<br/>
 									<br/>
-									github <a href='https://github.com/rxOred/'>rxOred</a>
+									Github <a href='https://github.com/rxOred/'>rxOred</a>
 									<br/>
 									<br/>
-									I dont use any other social media so, No.
+								    I dont use any other social media so, No. 
 								</p>
 
 							</div>
